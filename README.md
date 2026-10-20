@@ -1,13 +1,8 @@
-联系方式在个人主页： [https://imhxm.com](https://imhxm.com)
+
 
 ## 联系方式
 
-如需交流、合作或反馈，可通过微信联系：
-
-<p>
-  <img src="./assets/contact/wechat-search.png" alt="微信搜索：黄小木 AIGC" height="180">
-  <img src="./assets/contact/wechat-qr.png" alt="黄小木微信二维码" height="180">
-</p>
+联系方式在个人主页： [https://imhxm.com](https://imhxm.com)
 
 # 视频人物替换制作 Skill · DGX Spark
 
