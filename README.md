@@ -1,3 +1,12 @@
+## 联系方式
+
+如需交流、合作或反馈，可通过微信联系：
+
+<p>
+  <img src="./assets/contact/wechat-search.png" alt="微信搜索：硅基小木" height="180">
+  <img src="./assets/contact/wechat-qr.png" alt="黄小木微信二维码" height="180">
+</p>
+
 # 视频人物替换制作 Skill · DGX Spark
 
 把“选原片 → 看动作 → 角色参考 → ComfyUI → 多机生成 → 原声拼接 → 修复验收 → 图文归档”封装成一个可复用的 Codex Skill。既能处理几秒片段，也能管理完整 MV；支持两台合算同一段、两台分别做两段、三台独立补位。
@@ -166,3 +175,9 @@ python3 scripts/recast.py qa /path/to/internal-review.mp4 /path/to/technical.jso
 - [测试与限制](VALIDATION.md)：本包实测范围；不把旧GPU基准写成新包实测。
 
 本包没有附原MV、完整生成片、人物原始角色卡、权重、私钥或可直接连接私人机器的配置。图中含既有原片与人物示例，仅作为制作教学材料；第三方素材的权利不因代码许可而转移。代码与示例图片的许可范围见 [LICENSE](LICENSE) 与 [MEDIA_NOTICE.md](MEDIA_NOTICE.md)。此仓库发布代码与教学示例；飞书文档访问权限保持原设置。
+
+## 许可证
+
+本项目的原创代码与文档采用 [MIT License](LICENSE) 开源，Copyright (c) 2026 JayceHuang。
+
+`vendor/` 内的第三方代码保留原版权署名及许可证。MIT 许可不自动授予第三方媒体、模型权重等素材的权利；具体范围见 [MEDIA_NOTICE.md](MEDIA_NOTICE.md)。

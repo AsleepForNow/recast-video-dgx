@@ -9,3 +9,7 @@
 F4完整原MV、完整成片、原始角色卡和模型权重未打包。vendor内保留之前公开双机基准自带的红帆船短片及帧图，用于原仓库的结果一致性测试；其来源和已有许可说明仍以vendor的README/CREDITS为准。
 
 此GitHub仓库仅含所列代码、图文示例与原公开基准样本，不含私人集群配置。
+
+`assets/contact/wechat-search.png` 和 `assets/contact/wechat-qr.png` 由维护者授权用于本仓库联系方式展示，沿用 `JayceHuang/xiaomu_x_creator` 与 `JayceHuang/agent-video-pipeline` 中的同名原图；不属于上述24组制作教学配图。
+
+第三方代码位于 `vendor/`，保留其随附许可证与版权署名；根目录 `LICENSE` 的 MIT 许可适用于本项目原创代码与文档。
