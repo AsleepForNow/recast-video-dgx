@@ -11,6 +11,13 @@
 
 把“选原片 → 看动作 → 角色参考 → ComfyUI → 多机生成 → 原声拼接 → 修复验收 → 图文归档”封装成一个可复用的 Codex Skill。既能处理几秒片段，也能管理完整 MV；支持两台合算同一段、两台分别做两段、三台独立补位。
 
+## 项目资料下载
+
+- [夸克网盘：F4_流星雨_四人角色替换.zip](https://pan.quark.cn/s/aff1c565d543)
+- 夸克分享口令：`/~09ec3bagb6~:/`。可点击链接，或复制口令到夸克网盘 APP 打开。
+
+此链接为维护者提供的 F4 项目资料包入口；网盘压缩包与本仓库的 Skill 源码分别维护，内容及版本以各自文件为准。媒体素材的许可范围见 [MEDIA_NOTICE.md](MEDIA_NOTICE.md)。
+
 ![完整制作流程](assets/images/00_pipeline.png)
 
 这套方法来自《流星雨》四人替换及此前双 DGX Spark 项目。包中提供通用脚本、中文操作说明、配置示例、H3 API 图模板、之前双机源码，以及24组制作过程配图。**安装 Skill 不会启动生成，不会恢复已停止的《流星雨》工程。**
@@ -73,6 +80,22 @@ cp -R recast-video-dgx ~/.codex/skills/recast-video-dgx
 上图是**依据真实 API JSON 重绘的节点关系图，不是历史 ComfyUI 界面截图**。原始构建时的画布截图没有留存。更详细的Guide、模型与放大接线见 [ComfyUI说明](references/comfyui.md)。
 
 之前双机源码已包含在 `vendor/dual-spark`，保留 MIT 和上游署名。旧基准只覆盖其报告写明的短片条件，不能据此承诺完整 MV 的速度。先读[双机操作](references/dgx.md)，再选择执行路线。
+
+### 原来的双 DGX Spark 方案在哪里
+
+已经收入这个 Skill，可直接从本仓库阅读源码和说明：
+
+| 内容 | 本仓库入口 |
+|---|---|
+| 原双机方案源码、部署与实测记录 | [vendor/dual-spark](vendor/dual-spark/README.md) |
+| 两机合算的环境准备 | [SETUP.md](vendor/dual-spark/docs/SETUP.md) |
+| S02 完整作者图与 ComfyUI 适配器 | [S02_AUTHOR.md](vendor/dual-spark/docs/S02_AUTHOR.md) |
+| 当前制作流程的调度、防重、锁、回收和停止 | [references/dgx.md](references/dgx.md) |
+| 当前 H3 两阶段构图和 Guide 接线 | [references/comfyui.md](references/comfyui.md)、[API 基础图](assets/h3-api-base.json) |
+
+原仓库 [MinimaxH3-Dual-Dgx-Spark](https://github.com/GaryLauLGY/MinimaxH3-Dual-Dgx-Spark) 仍保留，作为来源和历史记录。本 Skill 内附的是固定提交 `c4179619cc301318de8732abc853303346a97ccb` 的源码快照，来源见 [PROVENANCE.json](PROVENANCE.json)，不会自动跟随原仓库更新。vendor 中的原快速开始仍展示原仓库的克隆命令；使用本 Skill 已附的快照时，直接进入 `vendor/dual-spark/` 即可阅读和按其说明配置。
+
+这包含方案、代码与操作文档；模型权重、ComfyUI 本体、部分自定义节点及环境工件、私人机器配置仍需自行准备。API 基础图不等同于包含全部前端状态的可拖入 UI 工作流。完整复现要求见 [ComfyUI 环境准入](references/comfyui.md)。
 
 ## 快速使用：先跑本地检查
 
