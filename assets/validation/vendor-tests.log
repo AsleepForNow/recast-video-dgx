@@ -1,0 +1,34 @@
+test_distinct_hosts_required (test_controller.ControllerTests) ... ok
+test_dry_run_never_contacts_or_writes (test_controller.ControllerTests) ... ok
+test_example_requires_editing_before_live_use (test_controller.ControllerTests) ... ok
+test_failed_preflight_blocks_all_staging (test_controller.ControllerTests) ... ok
+test_invalid_single_node_diagnostic_fails_before_ssh (test_controller.ControllerTests) ... ok
+test_prompt_is_one_remote_argument (test_controller.ControllerTests) ... ok
+test_published_results (test_controller.ControllerTests) ... ok
+test_runtime_help_requires_no_gpu_dependencies (test_controller.ControllerTests) ... ok
+test_scratch_cannot_touch_comfy (test_controller.ControllerTests) ... ok
+test_ssh_option_injection_rejected (test_controller.ControllerTests) ... ok
+test_traversal_and_shell_run_ids_rejected (test_controller.ControllerTests) ... ok
+test_configured_route_overrides_parent_and_keeps_native_allocator (test_s02_environment.EnvironmentTests) ... ok
+test_linked_model_parameter_is_retained (test_s02_graph_plan.PlanTests) ... ok
+test_native_step_progress_preserves_values_and_parent_identity (test_s02_graph_plan.PlanTests) ... ok
+test_original_workflow_routing_is_untouched (test_s02_graph_plan.PlanTests) ... ok
+test_preserves_native_parameters_and_input_graph (test_s02_graph_plan.PlanTests) ... ok
+test_preserves_preview_node_ids_and_original_graph (test_s02_graph_plan.PlanTests) ... ok
+test_preview_forwarding_does_not_complete_parent_early (test_s02_graph_plan.PlanTests) ... ok
+test_unsupported_model_patch_fails_instead_of_being_ignored (test_s02_graph_plan.PlanTests) ... ok
+test_interrupt_is_not_swallowed (test_s02_progress_relay.ProgressTests) ... ok
+test_native_sampler_context_and_exact_step_values (test_s02_progress_relay.ProgressTests) ... ok
+test_info_exposes_loaded_timeout_policy (test_s02_timeout_policy.AuthorPreflightTests) ... ok
+test_matching_policy_passes_preflight (test_s02_timeout_policy.AuthorPreflightTests) ... ok
+test_old_or_different_worker_policy_blocks_before_gpu (test_s02_timeout_policy.AuthorPreflightTests) ... ok
+test_bad_configuration_fails_before_launch (test_s02_timeout_policy.AuthorTimeoutTests) ... ok
+test_cancel_still_cleans_up_when_limit_disabled (test_s02_timeout_policy.AuthorTimeoutTests) ... ok
+test_child_error_is_not_hidden_by_disabled_limit (test_s02_timeout_policy.AuthorTimeoutTests) ... ok
+test_disabled_or_missing_limit_survives_twelve_hours (test_s02_timeout_policy.AuthorTimeoutTests) ... ok
+test_explicit_limit_still_stops_only_owned_child (test_s02_timeout_policy.AuthorTimeoutTests) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 2.643s
+
+OK

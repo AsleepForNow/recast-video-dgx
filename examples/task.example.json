@@ -1,0 +1,27 @@
+{
+  "run_id": "myfilm-s001-v001",
+  "segment_id": "S001",
+  "version": "v001",
+  "source": "source.mp4",
+  "source_fps": "30000/1001",
+  "start": 0,
+  "end": 120,
+  "native_fps": "24",
+  "native_frames": 107,
+  "seed": 20261020,
+  "first_stage_split": 2,
+  "rgb_path": "rgb.mp4",
+  "scene_references": [
+    {"frame": 0, "path": "target-first.png"},
+    {"frame": 60, "path": "target-middle.png"},
+    {"frame": 119, "path": "target-last.png"}
+  ],
+  "identities": [
+    {"name": "Target person A", "path": "identity-a.png", "wardrobe": "source blue crewneck and beige trousers", "track": "source foreground performer"}
+  ],
+  "action_prompt": "Replace this text after watching the complete action, including its start, middle, end and all occlusions. Use the target identity and source costume, retain source timing and camera.",
+  "action_review": {"passed": false, "reviewer": "", "at": "", "evidence": ""},
+  "reference_review": {"passed": false, "reviewer": "", "at": "", "evidence": ""},
+  "continuation": null,
+  "model_overrides": {}
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_sha256": "REPLACE_WITH_SELECTED_FILE_SHA256",
+  "technical_pass": false,
+  "continuous_playback_complete": false,
+  "visual_acceptance": false,
+  "reviewer": "",
+  "at": "",
+  "source_frame_range": [0, 120],
+  "evidence": [],
+  "findings": ["待实际连续播放源片与输出对照，不要复制示例为通过记录"]
+}

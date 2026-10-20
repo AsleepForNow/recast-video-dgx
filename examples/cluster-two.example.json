@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "paired_qualified": false,
+  "master_addr": "192.0.2.10",
+  "master_port": 29813,
+  "timeout_s": 14400,
+  "nodes": [
+    {
+      "id": "spark-a",
+      "enabled": true,
+      "ssh": "EDIT_spark_a",
+      "expected_hostname": "EDIT_hostname_a",
+      "python": "/home/EDIT_USER/h3/venv/bin/python",
+      "comfy_root": "/home/EDIT_USER/h3/ComfyUI",
+      "author_runner": "/home/EDIT_USER/h3/author_backend/author_runner.py",
+      "legacy_backend": "/home/EDIT_USER/h3/legacy_backend",
+      "runs_root": "/home/EDIT_USER/h3/skill-runs",
+      "gpu_lock": "/home/EDIT_USER/h3/runs/.gpu.lock",
+      "comfy_ports": [
+        8188
+      ],
+      "env": {
+        "PYTORCH_ALLOC_CONF": "backend:native",
+        "NCCL_SOCKET_IFNAME": "EDIT_fabric_interface",
+        "GLOO_SOCKET_IFNAME": "EDIT_fabric_interface",
+        "NCCL_IB_HCA": "EDIT_rdma_device",
+        "NCCL_IB_GID_INDEX": "3"
+      }
+    },
+    {
+      "id": "spark-b",
+      "enabled": true,
+      "ssh": "EDIT_spark_b",
+      "expected_hostname": "EDIT_hostname_b",
+      "python": "/home/EDIT_USER/h3/venv/bin/python",
+      "comfy_root": "/home/EDIT_USER/h3/ComfyUI",
+      "author_runner": "/home/EDIT_USER/h3/author_backend/author_runner.py",
+      "legacy_backend": "/home/EDIT_USER/h3/legacy_backend",
+      "runs_root": "/home/EDIT_USER/h3/skill-runs",
+      "gpu_lock": "/home/EDIT_USER/h3/runs/.gpu.lock",
+      "comfy_ports": [
+        8188
+      ],
+      "env": {
+        "PYTORCH_ALLOC_CONF": "backend:native",
+        "NCCL_SOCKET_IFNAME": "EDIT_fabric_interface",
+        "GLOO_SOCKET_IFNAME": "EDIT_fabric_interface",
+        "NCCL_IB_HCA": "EDIT_rdma_device",
+        "NCCL_IB_GID_INDEX": "3"
+      }
+    }
+  ]
+}

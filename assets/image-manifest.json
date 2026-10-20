@@ -1,0 +1,182 @@
+[
+  {
+    "figure": 1,
+    "file": "00_pipeline.png",
+    "description": "全流程说明图；非软件截图",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "b51585b4ea16cb694f637bac70cecac4e10e28a09934f7c583bcdee0908cb975"
+  },
+  {
+    "figure": 2,
+    "file": "01_source.jpg",
+    "description": "源片分镜概览",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "7d4ccf6e1ed064bff86b214fca6567e0c8abe05fa480c40337c8b2cd583f715a"
+  },
+  {
+    "figure": 3,
+    "file": "02_reference.jpg",
+    "description": "实际角色场景参考",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "4378103ae5aa2b5f4972d09b77733b164f83eb8664e5ecb2f6632887c5f3b8fe"
+  },
+  {
+    "figure": 4,
+    "file": "03_bow.jpg",
+    "description": "构图/弯腰问题对照",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "86bd4823eb7ea620fa780ec82c775b7f82b3bf783bba80726cc8243917a621c8"
+  },
+  {
+    "figure": 5,
+    "file": "04_eyes.jpg",
+    "description": "眼神问题对照",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "c2fa259b9dfada0c7afcb4e494b6bcde26dd984eca993a5685d14c9579bd33a9"
+  },
+  {
+    "figure": 6,
+    "file": "05_mouth.jpg",
+    "description": "嘴形问题对照",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "d829c2bc0f51a5a894e1c087155c856a0821cb14239a4bb67a2e4196153afe5d"
+  },
+  {
+    "figure": 7,
+    "file": "06_boundary.jpg",
+    "description": "接段问题对照",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "3c1627a65214b8c0dd73affb98e53f47a875e74acb5e0ebf158771d12b356992"
+  },
+  {
+    "figure": 8,
+    "file": "07_cast.jpg",
+    "description": "多人身份画面",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "c8dba0af93d06335fe74a11886f67efd31291c236a2f55ab2e41b80796d7f3c4"
+  },
+  {
+    "figure": 9,
+    "file": "09_comfy_overview.png",
+    "description": "真实API重绘总览；非历史界面截图",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "c33acedd800f6035b0d08022ce6b38890bf29f3851ef1411d06b51e10f338299"
+  },
+  {
+    "figure": 10,
+    "file": "10_comfy_inputs.png",
+    "description": "真实API重绘参考输入/Guide；非历史界面截图",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "907dab3e7543dec2f6964a5c3401b00f4cd4ece70121bd43ccfc44daeda89975"
+  },
+  {
+    "figure": 11,
+    "file": "11_comfy_sampling.png",
+    "description": "真实API重绘模型与采样；非历史界面截图",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "87e75d77eb0d3e7a27096791272c3bc8d2840979e733ac1b5bc7ef55dd081a8f"
+  },
+  {
+    "figure": 12,
+    "file": "12_comfy_refine.png",
+    "description": "真实API重绘放大与输出；非历史界面截图",
+    "origin": "F4制作过程文档既有配图",
+    "sha256": "21a2e171ddd2bb1376acbc467aafe105c3cf6e054ed80189dec81092fff99751"
+  },
+  {
+    "figure": 13,
+    "file": "13_source_types.jpg",
+    "description": "步骤1配图 识别原片中的不同任务",
+    "caption": "左上是多人同框，星空段有手势与特效，白底近景要检查嘴形和眼神，蓝衣多人段要检查遮挡。先看这几类镜头，再决定哪里需要更多参考图与更密的质检。",
+    "origin": "00_原片/官方完整版MV；源帧92、185、758、4261、4955、7551。",
+    "sha256": "79d179ae84035d80858c907105725d5e611eeb5b7d1dac2156c7467958b0077c"
+  },
+  {
+    "figure": 14,
+    "file": "14_identity_cards.jpg",
+    "description": "步骤2配图 区分身份卡和场景服装",
+    "caption": "这四张是实际使用的通用身份卡。R1=Dario，R2=Musk，R3=Sam，R4=Jensen。身份卡主要告诉模型“换成谁”；场景参考与提示词再约束“穿什么、站哪里、做什么”。不要把身份卡的衣服直接带进每个镜头。",
+    "origin": "工程外 影片资产库/角色卡/<身份>/通用身份_v001/身份照_正面.png。",
+    "sha256": "5b33a8a94485ee3cb2bf90443d03b4c811a200b2ae18a6202b53d6fcff60ff0b"
+  },
+  {
+    "figure": 15,
+    "file": "15_action_segments.jpg",
+    "description": "步骤3配图 看懂分段与共享边界",
+    "caption": "865是A段最后一帧，866是B段第一帧；1060和1061是下一组边界。它们都是生成任务的边界，不一定是原片硬切。下一段可使用实际前段尾帧作为参考，但剪辑时共享画面只出现一次。",
+    "origin": "源片F003；各区间以01_分镜与动作/首批执行计划.json为准。",
+    "sha256": "5207c48acaa553d728e7ad85eeac53983126e46fb885477461ab7314a56e9512"
+  },
+  {
+    "figure": 16,
+    "file": "16_reference_triplet.jpg",
+    "description": "步骤4配图 原片到目标参考的对应关系",
+    "caption": "上排原片，下排是本工程真实生成并审核过的场景参考。每一列保留相近的背景、人物位置、服装和遮挡，同时替换身份。766帧专门补了半睁眼条件，但参考图与原片仍有头角和嘴形幅度差异；这类误差要在生成前记下来。",
+    "origin": "02_场景参考/F003A/target-first、v005/target-766、target-last。",
+    "sha256": "e26234b0464e26be83f855ae3f5146b802f4ff1b7410b1bd2cfc68b9fb478837"
+  },
+  {
+    "figure": 17,
+    "file": "17_frozen_inputs.jpg",
+    "description": "步骤5配图 真正送入模型的素材",
+    "caption": "scene文件已经按模型尺寸缩放补边，和02目录中的准备素材有区别。最后一格是24fps RGB参考视频帧，不是生成结果。输入记录保存这些文件的SHA256，因此更改参考以后应新建版本，不能覆盖已提交包。",
+    "origin": "03_提示词与任务/F003A/v005；RGB与场景输入为实际文件。",
+    "sha256": "e5335c1b65883bc33a32f2137e9ea31995ba35e431470909d7ab2ee442cf12e2"
+  },
+  {
+    "figure": 18,
+    "file": "18_generation_stages.jpg",
+    "description": "步骤6配图 一阶段和二阶段到底有什么区别",
+    "caption": "每行按源片、首阶段、第二阶段排列。两阶段输出都保留，可以定位错误是首阶段已发生，还是细化后加重。766和810的眼神变化仍与原片不同，说明第二阶段更细致并不自动等于动作更准确。两种原生画面带少量模型补边，这里仅缩放展示。",
+    "origin": "04_生成片段/f4full-f003a-v005-20261016；原生24fps样本112、147。",
+    "sha256": "422ebfb277cfd4918e651285bc4402fffe8d3acdc437cd4f77d7d19c69d31ce6"
+  },
+  {
+    "figure": 19,
+    "file": "19_mapping_frames.jpg",
+    "description": "步骤7配图 帧率恢复不是把动作加速",
+    "caption": "相邻成片帧可能指向同一原生帧，图上已经写出实际索引。240帧成片来自24fps原生序列的时间映射，恢复的是源时钟，不是光流插帧，也不保证嘴形精准。每帧具体对应关系可以查mapping.json。",
+    "origin": "05_后处理/首批_v005/F003A/mapping.json与mapped.mp4。",
+    "sha256": "c4df2449477ac7931fa0adac37c7aeb991cf6434c44bd16c2bd2b819dcca8600"
+  },
+  {
+    "figure": 20,
+    "file": "20_boundary_sequence.jpg",
+    "description": "步骤8配图 接段检查不能只看一张尾帧",
+    "caption": "六个样本跨过A/B边界，检查头部位置、背景人物、衣服和嘴形是否突然跳变。这些图只适合做静态初筛，接点仍要连续播放；截图无黑帧不代表整片没有黑帧或动作重复。",
+    "origin": "完整版v004；A选v003，B选v002；全片帧862、865、866、867、870、874。",
+    "sha256": "0e664abeec3f713e8504299599aa20c4b0a6eb4745bd7e0a657f4c74fa45496e"
+  },
+  {
+    "figure": 21,
+    "file": "21_crop_repair.jpg",
+    "description": "步骤9配图 修复是否有效要和旧版放一起看",
+    "caption": "每行左为原片，中为旧v001，右为修复v002。300和305附近原来的过早裁头有改善，但身体尺度、手指轨迹与推近时刻仍可能不同。修复记录应写“哪一项改善、哪一项还没过”，避免只换上更漂亮的一帧。",
+    "origin": "F002A同源帧300、305；05_后处理/首批_v001与首批_v002。",
+    "sha256": "384ed5179097335dc86c6c7a75ea9f693fbf94f13a6e32a8fced0372b622cdec"
+  },
+  {
+    "figure": 22,
+    "file": "22_fullfilm_selection.jpg",
+    "description": "步骤10配图 拼成全片后还要跨镜头复查",
+    "caption": "这些样本来自同一个完整v004文件，不是把各自最好看的版本临时摆在一起。全片要检查衣服、发色、身份和镜头节奏是否跨段稳定。全片8163帧的技术通过，不替代272秒的实际动态视觉验收。",
+    "origin": "06_成片/完整版审看候选_v004/F4_完整版_内部待审_v004.mp4。",
+    "sha256": "4439256d9a4ce9b21952c79f0b5e0f96575f2f10cb136c117627d88a0e032e92"
+  },
+  {
+    "figure": 23,
+    "file": "23_delivery_packaging.jpg",
+    "description": "步骤11配图 生成内容与最终包装要分清",
+    "caption": "这是根目录横屏片头与黄小木水印v2的实际取样。包装版本号与镜头生成版本号不同；不能因为水印片已经导出，就把仍有缺陷的生成镜头认定为最终验收。包装版时间从该文件自身0秒开始，不直接当作源片帧号。",
+    "origin": "工程根目录 F4_流星雨_完整版_横屏片头_黄小木水印_v2.mp4。",
+    "sha256": "858890e2372c9a4f8e3fd90eab05eef7742e25eb01404a6a7437df24627a540c"
+  },
+  {
+    "figure": 24,
+    "file": "24_directory_roles.png",
+    "description": "步骤12配图 文件应该去哪找",
+    "caption": "按00到07追踪素材到成片；09存脚本、交接与本文档。想复盘某一帧，从06合成清单找镜头版本，再回05、04、03、02和01查证据。没有08是当前编号留空，不能自行编造一个“必须存在”的处理环节。",
+    "origin": "依据当前工程顶层目录整理；为说明图，不是文件管理器界面截图。",
+    "sha256": "e18dc40ec9e7dbdd7ccbc929f3dc52ccb274cdab78b8ad01410a29e3beadae47"
+  }
+]

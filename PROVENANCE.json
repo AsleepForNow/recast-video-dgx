@@ -1,0 +1,9 @@
+{
+  "dual_repository": "https://github.com/GaryLauLGY/MinimaxH3-Dual-Dgx-Spark",
+  "dual_commit": "c4179619cc301318de8732abc853303346a97ccb",
+  "export": "committed HEAD only; excluded .git and CI; includes published benchmark sailboat fixture for verification; local uncommitted runtime not copied",
+  "h3_topology_source": "F003A/v005/H3_API.json",
+  "h3_source_sha256": "7f1a07bf58aad684c82f0b23019a3445c7124196bf14303abf5ea0a22b8a0d96",
+  "template_changes": "removed shot prompts, scene/identity paths, guide nodes and source-specific IDs; keep base model/sampler branches",
+  "gpu_regression_this_package": false
+}

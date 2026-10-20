@@ -1,0 +1,50 @@
+test_exact_mapping_offsets (test_production.Production) ... ok
+test_freeze_dryrun_and_duplicate_submission (test_production.Production) ... ok
+test_media_pipeline_and_acceptance_gate (test_production.Production) ... ok
+test_pair_allocation_has_no_overlap (test_production.Production) ... ok
+test_plan_gaps_overlaps_and_review (test_production.Production) ... ok
+test_remote_lock_and_owned_stop_without_gpu (test_production.Production) ... ok
+test_stop_guard_and_physical_node_dedup (test_production.Production) ... ok
+test_stop_project_fences_submissions (test_production.Production) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.781s
+
+OK
+<temporary-fixture>
+{
+  "run_id": "myfilm-s001-v001",
+  "world_size": 1,
+  "nodes": [
+    {
+      "id": "spark-a",
+      "ssh": "EDIT_spark_a",
+      "gpu_lock": "/home/EDIT_USER/h3/runs/.gpu.lock",
+      "remote_run": "/home/EDIT_USER/h3/skill-runs/myfilm-s001-v001"
+    }
+  ],
+  "status": "dry_run_no_network"
+}
+<temporary-fixture>
+{
+  "at": "2026-10-20T09:34:58.007896+00:00",
+  "artifact_sha256": "e485a399d2ce014de4d52bf91d0d865aa60138278d84bee55736b56fff968508",
+  "checks": {
+    "frames": true,
+    "fps": true,
+    "decode": true,
+    "audio_exact": true
+  },
+  "technical_pass": true,
+  "black_candidates": [],
+  "black_review_pending": false,
+  "audio": {
+    "method": "full decoded 48k stereo PCM equality",
+    "source_sha256": "e584ca95fb43e4003187b5ef9ba771d5a9f44058de23dfbe47e7383fff2328e4",
+    "output_sha256": "e584ca95fb43e4003187b5ef9ba771d5a9f44058de23dfbe47e7383fff2328e4",
+    "exact": true
+  },
+  "visual_acceptance": false,
+  "dynamic_review": "pending"
+}
+[]

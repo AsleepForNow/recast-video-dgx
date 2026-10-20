@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "source": {"frame_count": 12, "fps": "30000/1001"},
+  "segments": [
+    {"id": "S001", "start": 0, "end": 6, "action_review": {"passed": false}, "selected_file": "mapped-1.mp4", "review_record": "review-1.json"},
+    {"id": "S002", "start": 6, "end": 12, "action_review": {"passed": false}, "selected_file": "mapped-2.mp4", "review_record": "review-2.json"}
+  ]
+}
