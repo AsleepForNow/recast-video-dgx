@@ -2,11 +2,15 @@
 
 > 从 X 帖子来到这里？这是一份**面向第一次接触项目的读者**的快速导览：先看效果与思路，再领取物料、安装 Codex Skill，最后按需研究 ComfyUI 和 DGX Spark 多机流程。
 
-**相关入口**：[黄小木的 X 帖子](https://x.com/ai_xiaomu/status/2112500851881525445) · [完整技术 README](README.md) · [原始项目 JayceHuang/recast-video-dgx](https://github.com/JayceHuang/recast-video-dgx) · [本 Fork](https://github.com/AsleepForNow/recast-video-dgx)
+**相关入口**：[黄小木的 X 帖子](https://x.com/ai_xiaomu/status/2112500851881525445) · [Fork 的 Gemini App 无 Key 模式](README.md) · [原 H3 技术 README](README_H3.md) · [原始项目 JayceHuang/recast-video-dgx](https://github.com/JayceHuang/recast-video-dgx) · [本 Fork](https://github.com/AsleepForNow/recast-video-dgx)
+
+## 本 Fork 新增 Gemini App 无 Key 路线
+
+本 Fork 的 [README.md](README.md) 已将**Gemini App 手动生成视频**设为默认入口，并增加 [Gemini 人工交接 Skill 指令](SKILL.md)、[生成/回收本地脚本](scripts/gemini_app.py) 和 [完整流程](references/gemini-app.md)。Codex 不会直接调用你的 Gemini App；需要本人上传参考视频与图片、生成并下载。原版 H3 / DGX 方案仍在 [README_H3.md](README_H3.md)，本页下面主要介绍**原版开源背景及 F4 历史案例**，不能视为 Gemini 生成实测。
 
 ## 先说结论：开源的是一套可复用的制作方法
 
-原帖提到“物料包，skill 均开源”。本仓库提供的不是一个点击按钮就能在线出片的网站，而是一个供 **OpenAI Codex** 使用的 **视频人物替换制作 Skill**：把原片分析、角色参考、逐镜任务、MiniMax H3 / ComfyUI 生成、多台 DGX Spark 协作、原声合成与人工质检串成可追踪的流程。
+原帖提到“物料包，skill 均开源”。原版提供的不是一个点击按钮就能在线出片的网站，而是一个供 **OpenAI Codex** 使用的 **视频人物替换制作 Skill**：把原片分析、角色参考、逐镜任务、MiniMax H3 / ComfyUI 生成、多台 DGX Spark 协作、原声合成与人工质检串成可追踪的流程。
 
 ![从原片到交付的流程示意](assets/images/00_pipeline.png)
 
