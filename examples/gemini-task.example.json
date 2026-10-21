@@ -1,0 +1,26 @@
+{
+  "segment_id": "S001",
+  "version": "v001",
+  "source": "/absolute/path/to/source.mp4",
+  "start": 0,
+  "end": 120,
+  "source_actor": "原视频中位于画面左侧的主要人物",
+  "target_character": "已获授权的角色 A",
+  "wardrobe": "保持原视频该镜头中的服装、发型轮廓和配饰设置（除需要替换的身份特征）",
+  "action_notes": "观看完整片段后，在这里填写转身、走位、遮挡、手部和嘴形等真实动作，不要猜。",
+  "reference_images": [
+    "/absolute/path/to/identity-a.png"
+  ],
+  "action_review": {
+    "passed": false,
+    "reviewer": "",
+    "at": "",
+    "evidence": ""
+  },
+  "reference_review": {
+    "passed": false,
+    "reviewer": "",
+    "at": "",
+    "evidence": ""
+  }
+}
